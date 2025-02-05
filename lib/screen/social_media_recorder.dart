@@ -1,6 +1,7 @@
 library social_media_recorder;
 
 import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:social_media_recorder/provider/sound_record_notifier.dart';
@@ -254,6 +255,7 @@ class _SocialMediaRecorder extends State<SocialMediaRecorder> {
                           child: ShowCounter(
                               counterBackGroundColor:
                                   widget.counterBackGroundColor,
+                              counterTextStyle: widget.counterTextStyle,
                               soundRecorderState: state,
                               fullRecordPackageHeight:
                                   widget.fullRecordPackageHeight),
